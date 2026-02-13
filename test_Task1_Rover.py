@@ -1,12 +1,27 @@
+# ---
+# jupyter:
+#   jupytext:
+#     cell_metadata_filter: -all
+#     formats: ipynb,py:percent
+#     text_representation:
+#       extension: .py
+#       format_name: percent
+#       format_version: '1.3'
+#       jupytext_version: 1.19.1
+# ---
+
+# %%
 '''
     Student shall write their names here
         1. Student 1
         2. Student 2
 '''
 
+# %%
 import unittest
 from Task1_Rover import rovar
 
+# %%
 class test_string(unittest.TestCase):
     '''
         _LOWER_CONSTANTS = "bcdfhjklmnpqrstvwxz"
@@ -29,13 +44,14 @@ class test_string(unittest.TestCase):
 
     # You can continue writing your test cases here based on the assignment description
 
+# %%
+
+# %%
+
+# %%
 
 
-
-
-
-
-
+# %%
 if __name__ == '__main__':
     print("***********START OF All TEST CASES RESULTS SHOWN BELOW**************")
     unittest.main(verbosity = 2)

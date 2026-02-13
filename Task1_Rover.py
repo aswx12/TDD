@@ -5,7 +5,7 @@ class rovar:
         self._LOWER_CONSTANTS = "bcdfhjklmnpqrstvwxz"
         self._UPPER_CONSTANTS = "BCFGHJKLMNPQRSTVWXZ"
  
-    def enrove(self, normal: str)-> str:
+    def enrove(self, normal: str)-> str: 
         '''
         Encode the string in rovarspraket.
         Args:
@@ -13,8 +13,12 @@ class rovar:
         Returns:
             (str) Encoded String
         '''
-        if normal is None:
-            return None
+        #if rov is None:
+            #return None 
+        #This is returning none instead of raising an exception¨
+        #-->  
+        if normal is None or not isinstance(normal, str):
+          raise TypeError("Input must be a non-empty string")
         
         encoded = []
         for char in normal:
